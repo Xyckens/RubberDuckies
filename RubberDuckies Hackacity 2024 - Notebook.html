@@ -7531,26 +7531,6 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Instructions----RETIRAR-DEPOIS">Instructions    RETIRAR DEPOIS<a class="anchor-link" href="#Instructions----RETIRAR-DEPOIS">¶</a></h1><ul>
-<li>The purpose of this notebook is to provide a detailed description so that the technical and business jury can have an overview of the technical and non-technical aspects and how they interconnect.</li>
-<li>To use the template, you must make a copy and fill in the team name and the challenge title.</li>
-<li>The cells containing the instructions should be deleted, but all headers must be kept.</li>
-<li>All technical information should be included in this report (e.g., code, queries, graphs, tools used, parameters, etc.). If necessary, additional files can be added to the OneDrive folder, with references to those files included in this report.</li>
-</ul>
-<h1 id="Tip">Tip<a class="anchor-link" href="#Tip">¶</a></h1><ul>
-<li>The technical and business jury will need to evaluate several notebooks, so it’s important to maintain a clear line of thought within the notebook without overloading it with too many similar graphs or visuals that do not add value to the work. On the other hand, it’s important to show that the work done is thorough.</li>
-<li>Therefore, we recommend using the annex section to include code that was produced along with its description but might be unnecessary noise for the jury (e.g., tested models that didn’t work, EDA with very similar results between variables, etc.).</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="1---Introduction">1 - Introduction<a class="anchor-link" href="#1---Introduction">¶</a></h1>
 </div>
 </div>
@@ -7562,17 +7542,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions:----RETIRAR-DEPOIS">Instructions:    RETIRAR DEPOIS<a class="anchor-link" href="#Instructions:----RETIRAR-DEPOIS">¶</a></h3><p>Contextualization and explanation of the problem and the proposed solution. Should only contain text or text and images.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Based on the dataset provided, which contains sensitive information, our goal was to mitigate potential data threats by analyzing patterns and understanding how they might be used to target individual users.
+This document outlines how such information could be exploited if not adequately protected, along with proposed strategies to enhance the security of the data.</p>
 </div>
 </div>
 </div>
@@ -7594,30 +7565,13 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions:----RETIRAR-DEPOIS">Instructions:    RETIRAR DEPOIS<a class="anchor-link" href="#Instructions:----RETIRAR-DEPOIS">¶</a></h3><p>This section should cover a threat analysis of the dataset from the privacy perspective and it's quantification.</p>
-<p>Important notes:</p>
+<p>Before anonymization, we identified some data categories that could directly reveal user identities or detect patterns leading to identification, such as:</p>
 <ul>
-<li>Only this section is evaluated for the data privacy award;</li>
-<li>No code is needed for this section;</li>
-<li>A good quantification of the threat is valuade by the jury;</li>
-<li>Include any references that is important.</li>
+<li>MAC address</li>
+<li>Connection start time</li>
+<li>Connection duration</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Before anonymization, we find that several categories of data can be used to directly identify the user (MAC address) or detect paterns that leads to identfying the user</p>
-<ul>
-<li>macadres</li>
-<li>start time of connec</li>
-<li>duration of connec</li>
-</ul>
+<p>This is because the MAC address is a unique identifier tied to the user's device, making it directly linkable to an individual. Similarly, the connection start time and duration, when combined, can reveal usage patterns unique to a specific user, such as their habits or routines, potentially leading to re-identification even without the MAC address.</p>
 </div>
 </div>
 </div>
@@ -7639,19 +7593,13 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions----RETIRAR-DEPOIS">Instructions    RETIRAR DEPOIS<a class="anchor-link" href="#Instructions----RETIRAR-DEPOIS">¶</a></h3><p>Based on the previous threat assesment, propose any anonymization techniques you might find helpful.</p>
-<p>Include all the code and proof needed that the threat has been mitigated.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We propose anonymizing user data by adding noise to their MAC addresses before securely hashing them.</p>
+<p>We propose anonymizing user data by adding noise to their MAC addresse, connection start time and connection duration before securely hashing them.
+<br/></p>
+<ul>
+<li>We generate noise (os.urandom(16)) for each piece of data while ensuring that identical inputs produce different hashes, preventing patterns from emerging.</li>
+<li>Then concatenate the noise (as a hexadecimal string) to the data before hashing.</li>
+<li>Finally, randomize the input to the hashing function, making it computationally infeasible to deduce the original data without the noise.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7663,9 +7611,37 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hash_sensitive_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">salt</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">salt</span><span class="p">:</span>
+        <span class="n">salt</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">salted_data</span> <span class="o">=</span> <span class="n">salt</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">hashed</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">salted_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">hashed</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Here follows an example of start time treatment.</p>
+<ul>
+<li>Before treatment:</li>
+</ul>
+<ul>
+<li>After treatment:</li>
+</ul>
+<blockquote>
+<p>2024-09-18 14:00:00</p>
+</blockquote>
+<blockquote>
+<p>85211886be95947855e8bb65ab6e35573e8c1fd680a8dfe69bfc0923920f827c</p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -7687,18 +7663,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions----RETIRAR-DEPOIS">Instructions    RETIRAR DEPOIS<a class="anchor-link" href="#Instructions----RETIRAR-DEPOIS">¶</a></h3><p>Not all solutions are perfect - Do a threat analysis and compare the threats before and after your solution.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Since we created a list of data noise to add to mac addresses, that list now has become a liability, in case of a security breach, it can be used to discover the hash key and then, the user data.</p>
+<p>Salted hashes secure user IDs and timestamps but could still be vulnerable to predictable input patterns.
+Unencrypted variables (e.g., access points, data volumes) might reveal user behaviors or movement patterns.
+External datasets could enable re-identification through data linkage.
+Mitigation strategies include strong salt management, aggregating sensitive variables, applying differential privacy, and limiting data sharing.</p>
 </div>
 </div>
 </div>
@@ -7710,18 +7678,6 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="5---Data-potential-and-analysis">5 - Data potential and analysis<a class="anchor-link" href="#5---Data-potential-and-analysis">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions----RETIRAR-DEPOIS">Instructions    RETIRAR DEPOIS<a class="anchor-link" href="#Instructions----RETIRAR-DEPOIS">¶</a></h3><p>It is typical that during an anonymization process, there is a loss of value in terms of insights. In this section, explore the other side of the scale - What can still be done with the data that is processed and why is the risk above justifiable taking into account the potential return?</p>
-<p>Specifically, try to imagine yourself as the city's analytics team, which uses this data to gather conclusions about the city's state and flow and try develop and demonstrate what results and analyses can be done. You can use the given data plus optionally any other data sources. If you complement with additional datasets, be it from the city Open Data Portal (<a href="https://opendata.porto.digital">https://opendata.porto.digital</a>) or other datasets, make sure you cite and reference them explicitly.</p>
 </div>
 </div>
 </div>
@@ -7781,7 +7737,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="5---Conclusions-and-Future-Work">5 - Conclusions and Future Work<a class="anchor-link" href="#5---Conclusions-and-Future-Work">¶</a></h1>
+<h1 id="6---Conclusions-and-Future-Work">6 - Conclusions and Future Work<a class="anchor-link" href="#6---Conclusions-and-Future-Work">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7792,8 +7748,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions----RETIRAR-DEPOIS:">Instructions    RETIRAR DEPOIS:<a class="anchor-link" href="#Instructions----RETIRAR-DEPOIS:">¶</a></h3><p>List the main conclusions focusing on the feasibility, innovation, and applicability of the solution.</p>
-<p>In addition, describe the future work still necessary if this solution were to continue: What would the next steps be? What limitations do the data have for implementing the solution? How can the data be improved? How could this solution be improved? What other ideas could be included/analyzed? What other types of data could be used? What other methodologies could be experimented with?</p>
+<p>We identified valuable insights that could be used to detect user patterns and potentially identify individuals. By anonymizing this data, the risk of compromising user privacy is mitigated, while retaining its informational value. The treated data enables a meaningful study of access point usage and importance.
+For future work, with historical data on access points, we can develop a machine learning model to predict user peaks and optimize resource allocation accordingly. Carefully aggregate and generalize unencrypted variables. Consider combining hashing with differential privacy for enhanced protection.</p>
 </div>
 </div>
 </div>
@@ -7804,34 +7760,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>We found some information that could be used to detect user paterns that can identify them.</li>
-<li>By having that data anonymized, that risk disappears but there's still value to the information.</li>
-<li>With what remains after treatment, a study of access points usage and importance can be obtained.</li>
-<li>Having historical data of the access points, will allow us to create a machine learning model to predict peaks of users and prepare accordingly.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="6---References">6 - References<a class="anchor-link" href="#6---References">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructions:">Instructions:<a class="anchor-link" href="#Instructions:">¶</a></h3><p>Provide the relevant references for materials and/or sources used (reports, articles, external data sources, etc.).</p>
+<h1 id="7---References">7 - References<a class="anchor-link" href="#7---References">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7856,6 +7785,50 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="9---Annex">9 - Annex<a class="anchor-link" href="#9---Annex">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>app.ipynb:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">hashlib</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">wifi_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"/Hackacity2024Data/hackacity_wifi_data.csv"</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">hash_sensitive_data</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">salt</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">salt</span><span class="p">:</span>
+        <span class="n">salt</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">urandom</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+    <span class="n">salted_data</span> <span class="o">=</span> <span class="n">salt</span><span class="o">.</span><span class="n">hex</span><span class="p">()</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">hashed</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">salted_data</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">hashed</span>
+
+<span class="n">wifi_data</span><span class="p">[</span><span class="s1">'callingstationid'</span><span class="p">]</span> <span class="o">=</span> <span class="n">wifi_data</span><span class="p">[</span><span class="s1">'callingstationid'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">hash_sensitive_data</span><span class="p">)</span>
+<span class="n">wifi_data</span><span class="p">[</span><span class="s1">'acctstarttime'</span><span class="p">]</span> <span class="o">=</span> <span class="n">wifi_data</span><span class="p">[</span><span class="s1">'acctstarttime'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">hash_sensitive_data</span><span class="p">)</span>
+<span class="n">wifi_data</span><span class="p">[</span><span class="s1">'acctsessiontime'</span><span class="p">]</span> <span class="o">=</span> <span class="n">wifi_data</span><span class="p">[</span><span class="s1">'acctsessiontime'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">hash_sensitive_data</span><span class="p">)</span>
+
+<span class="n">wifi_data</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"/Hackacity2024Data/updated_hackacity_wifi_data.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Trinity applied successfully."</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7908,7 +7881,7 @@ a.anchor-link {
         <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
         <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">(</span><span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="n">writer</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">filtered_rows</span><span class="p">)</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="s2">"/Hackacity2024Data.csv"</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s2">"/Hackacity2024Data/hackacity_wifi_data.csv"</span>
 <span class="n">date_column</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">delete_old_rows_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">date_column</span><span class="p">)</span>
 </pre></div>
